@@ -189,11 +189,12 @@ ol,ul{
     right: 0;
     top: 0;
 }
-#banner .dGrid .left .counter .counterItem h3{
+#banner .dGrid .left .counter .counterItem h3 {
     font-family: var(--Space);
     font-size: 32px;
     font-weight: 500;
     letter-spacing: -.4px;
+    color: #fff;
 }
 #banner .dGrid .left .counter .counterItem span{
     line-height: 1.5;
@@ -415,5 +416,203 @@ ol,ul{
     font-size: 18px;
     color: #757575;
 }
-
 /* users End */
+
+/* Pricing Start */
+#pricing{
+    padding: 100px 0;
+}
+#pricing h2{
+    font-family: var(--Space);
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    color: #232323;
+}
+#pricing .container > p{
+    font-weight: 400;
+    text-align: center;
+    color: rgba(35, 35, 35, 0.80);
+    margin: 64px 0;
+}
+#pricing .dGrid{
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+#pricing .dGrid .card{
+    border: 1px solid rgba(35, 35, 35, 0.16);
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    padding: 32px;
+    overflow: hidden;
+}
+/* #pricing .dGrid .card:hover{
+    background-color: #325B97;
+}
+#pricing .dGrid .card:hover h3{
+    color: #fff;
+}
+#pricing .dGrid .card:hover h3 i{
+    color: #fff;
+}
+#pricing .dGrid .card:hover .price{
+    color: #fff;
+}
+#pricing .dGrid .card:hover .price span{
+    color: #fff;
+}
+#pricing .dGrid .card:hover p{
+    color: #fff;
+} */
+#pricing .dGrid .card:hover {
+    background-color: #325B97;
+    color: #fff;
+    cursor: pointer;
+}
+#pricing .dGrid .card:hover h3{
+    border-color: #fff;
+}
+
+#pricing .dGrid .card:hover h3,
+#pricing .dGrid .card:hover h3 i,
+#pricing .dGrid .card:hover .price,
+#pricing .dGrid .card:hover .price span,
+#pricing .dGrid .card:hover p,
+#pricing .dGrid .card:hover ul li,
+#pricing .dGrid .card:hover ul li i,
+#pricing .dGrid .card:hover ul li:last-child,
+#pricing .dGrid .card:hover ul li:last-child i,
+#pricing .dGrid .card:hover ul li:nth-last-child(2),
+#pricing .dGrid .card:hover ul li:nth-last-child(2) i {
+    color: #fff;
+}
+#pricing .dGrid .card:hover .commonBtn {
+    background-color: #fff;
+    color: #325B97;
+}
+
+#pricing .dGrid .card > h3 i{
+    font-size: 25px;
+}
+#pricing .dGrid .card > h3{
+    font-family: var(--Space);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.40;
+    letter-spacing: -0.5px;
+    color: #232323;
+    border: 1px solid rgba(35, 35, 35, 0.16);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    display: inline-grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    align-items: center;
+    column-gap: 16px;
+    padding: 10px 24px;
+}
+#pricing .dGrid .card .price{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.40;
+    letter-spacing: -0.5px;
+    color: #757575;
+    margin: 45px 0 25px;
+}
+#pricing .dGrid .card .price span{
+    font-family: var(--Space);
+    font-size: 48px;
+    font-weight: 500;
+    color: #232323;
+}
+#pricing .dGrid .card p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.40;
+    letter-spacing: -0.5px;
+    color: #757575;
+    margin: 16px 0 35px;
+}
+#pricing .dGrid .card ul{
+    display: grid;
+    gap: 16px;
+}
+#pricing .dGrid .card ul li i{
+    color: #155CB5;
+    margin-right: 8px;
+}
+#pricing .dGrid .card.basic ul li:last-child,
+#pricing .dGrid .card.basic ul li:last-child i{
+    color: #8E8E8E;
+}
+#pricing .dGrid .card.basic ul li:nth-last-child(2),
+#pricing .dGrid .card.basic ul li:nth-last-child(2) i{
+    color: #8E8E8E;
+}
+#pricing .dGrid .card .commonBtn {
+    background-color: #325B97;
+    margin-top: 32px;
+    border: 0;
+    display: block;
+    text-align: center;
+}
+/* Pricing End */
+
+/* Smart Start */
+#smart{
+    padding: 100px 0;
+    background-color: #f9faff;
+}
+#smart .smartWrapper{
+    background-color: #394792;
+    position: relative;
+    overflow: hidden;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    padding: 100px 64px;
+}
+#smart .smartWrapper h2{
+    width: 50%;
+    font-family: var(--Space);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+#smart .smartWrapper .commonBtn{
+    color: #394792;
+    background-color: #fff;
+    box-shadow: -1px 11px 24px 0px rgba(255,255,255,0.2);
+    -webkit-box-shadow: -1px 11px 24px 0px rgba(255,255,255,0.2);
+    -moz-box-shadow: -1px 11px 24px 0px rgba(255,255,255,0.2);
+}
+#smart .smartWrapper .smartImage{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px 0 0 0;
+    -webkit-border-radius: 25px 0 0 0;
+    -moz-border-radius: 25px 0 0 0;
+    -ms-border-radius: 25px 0 0 0;
+    -o-border-radius: 25px 0 0 0;
+    background-color: #D9D9D9;
+}
+#smart .smartWrapper .smartIcon {
+    position: absolute;
+    left: calc(50% - 310px);
+    bottom: 92px;
+}
+/* Smart End */
