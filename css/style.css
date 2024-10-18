@@ -10,6 +10,7 @@ html{
     -moz-transition: all linear 0.3s;
     -ms-transition: all linear 0.3s;
     -o-transition: all linear 0.3s;
+    color: var(--defaultColor);
 }
 :root{
     --inter: "Inter", sans-serif;
@@ -38,7 +39,7 @@ p{
     font-weight: 400;
     line-height: 1.70;
     color: var(--defaultColor);
-    letter-spacing: -0.45px;    
+    letter-spacing: -0.6px;    
 }
 ol,ul{
     list-style-type: none;
@@ -122,6 +123,23 @@ ol,ul{
     background-color: #394792;
     padding-top: 210px;
     padding-bottom: 107px;
+    position: relative;
+}
+#banner .bannerIllustration1 {
+    position: absolute;
+    top: 221px;
+    left: calc(50% + 30px);
+    z-index: 1;
+}
+#banner .bannerIllustration2 {
+    position: absolute;
+    top: 335px;
+    left: calc(50% - 186px);
+    z-index: 1;
+}
+#banner .container{
+    position: relative;
+    z-index: 2;
 }
 #banner .dGrid{
     grid-template-columns: repeat(1200, 1fr);
@@ -160,6 +178,16 @@ ol,ul{
     column-gap: 80px;
     margin-top: 80px;
     color: #fff;
+    position: relative;
+}
+#banner .dGrid .left .counter .counterItem::after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 #banner .dGrid .left .counter .counterItem h3{
     font-family: var(--Space);
@@ -178,3 +206,214 @@ ol,ul{
     margin-bottom: -15px;
 }
 /* Banner End */
+
+/* Management Start */
+#management{
+    padding: 100px 0;
+}
+#management .title{
+    font-family: var(--Space);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.40;
+    text-align: center;
+}
+#management .dGrid{
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 30px;
+    margin-top: 64px;
+}
+#management .card{
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+#management .card .cardHead{
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+#management .card .cardHead img{
+    width: 100%;
+    height: auto;
+}
+#management .card .cardBody h2{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.40;
+    text-align: justify;
+    letter-spacing: -0.5px;
+}
+#management .card .cardBody p{
+    line-height: 1.70;
+    text-align: justify;
+    letter-spacing: -0.6px;
+    color: #757575;
+    margin-top: 16px;
+}
+/* Management End */
+
+/* Others Start */
+#others{
+    padding: 100px 0;
+    position: relative;
+}
+#others .otherIllustration {
+    position: absolute;
+    top: 151px;
+    left: calc(50% + 600px - 25px);
+    transform: translateX(-100%);
+    z-index: 1;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+#others .container{
+    position: relative;
+    z-index: 2;
+}
+#others .dGrid{
+    grid-template-columns: repeat(2, 1fr);
+}
+#others .dGrid .left{
+    overflow: hidden;
+}
+#others .dGrid .right{
+    margin-left: 116px;
+}
+#others .dGrid .right .title{
+    font-family: var(--Space);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.40;
+    letter-spacing: -2.5px;
+}
+#others .dGrid .right>p{
+    margin-top: 25px;
+}
+#others .dGrid .right ul{
+    margin-top: 25px;
+}
+#others .dGrid .right ul li{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    align-items: center;
+    column-gap: 16px;
+    padding: 16px;
+    border: 1px solid rgba(35, 35, 35, 0.16);
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    margin-bottom: 24px;
+}
+#others .dGrid .right ul li:last-child{
+    margin-bottom: 0;
+}
+/* Others End */
+
+/* users Start */
+#users{
+    padding: 100px 0 130px;
+    background-color: #F9FAFF;
+}
+#users .dGrid{
+    grid-template-columns: repeat(2, 1fr);   
+    margin-bottom: 64px; 
+}
+#users .dGrid p{
+    margin-top: 32px;
+    padding-right: 30px;
+}
+#users .dGrid .pagination{
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 16px;
+}
+#users .dGrid .pagination a i{
+    width: 72px;
+    height: 72px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 72px;
+    color: #fff;
+    background-color: rgba(50, 90, 151, 0.1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#users .dGrid .pagination a i.active{
+    background-color: #325B97;
+}
+#users .dGrid .pagination a i:hover{
+    background-color: #325B97;
+}
+#users .userCardWrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+#users .userCardWrapper .card{
+    background-color: #fff;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    padding: 48px;
+}
+#users .userCardWrapper .card .cardTitle{
+    font-size: 24px;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    column-gap: 10px;
+    justify-content: start;
+    align-items: center;
+}
+#users .userCardWrapper .card .cardTitle i{
+    font-size: 13.5px;
+    color: #FFC236;
+}
+#users .userCardWrapper .card .cardTitle i:first-child{
+    margin-left: 7px;
+}
+#users .userCardWrapper .card > p{
+    color: #757575;
+    padding-bottom: 24px;
+    margin: 24px 0;
+    letter-spacing: -0.7px;
+    border-bottom: 1px solid rgba(35, 35, 35, 0.16);;
+}
+#users .userCardWrapper .card .profileWrapper{
+    display: inline-grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    gap: 24px;
+}
+#users .userCardWrapper .card .profileWrapper img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#users .userCardWrapper .card .profileWrapper span{
+    font-family: var(--inter);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--defaultColor);
+}
+#users .userCardWrapper .card .profileWrapper p{
+    font-size: 18px;
+    color: #757575;
+}
+
+/* users End */
