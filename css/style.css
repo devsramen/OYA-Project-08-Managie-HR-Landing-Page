@@ -25,7 +25,6 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px dotted green;
 }
 span{
     display: inline-block;
@@ -616,3 +615,77 @@ ol,ul{
     bottom: 92px;
 }
 /* Smart End */
+
+/* footer start */
+#footer{
+    padding: 100px 0;
+}
+#footer .dGrid{
+    grid-template-columns: repeat(12, 1fr);
+    /* column-gap: 129px; */
+}
+#footer .dGrid .left {
+    grid-column: span 4;
+    margin-right: 129px;
+}
+#footer .dGrid .left > p{
+    font-weight: 500;
+    line-height: 1.50;
+    letter-spacing: -1px;
+    color: #325B97;
+    margin-top: 24px;
+}
+#footer .dGrid .right{
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(140px, 1fr));
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+#footer .dGrid .right ul li{
+    text-transform: capitalize;
+    color: rgba(35, 35, 35, 0.70);
+    margin-bottom: 16px;
+}
+#footer .dGrid .right ul li:first-child{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #232323;
+    margin-bottom: 32px;
+}
+#footer .dGrid .right ul li:last-child{
+    margin-bottom: unset;
+}
+#footer .dGrid .right ul li a{
+    text-transform: capitalize;
+    position: relative;
+}
+#footer .dGrid .right ul li a::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(35, 35, 35, 0.70);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+#footer .dGrid .right ul li a:hover{
+    color: #394792;
+    padding-left: 15px;
+}
+#footer .dGrid .right ul li a:hover::before{
+    width: 10px;
+}
+/* footer end */
