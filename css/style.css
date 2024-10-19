@@ -94,9 +94,6 @@ ol,ul{
     color: #fff;
     position: relative;
 }
-#nav .dGrid .navBtn a:first-child{
-    border: 0;
-}
 #nav .dGrid ul li a::after{
     content: "";
     width: 0;
@@ -114,6 +111,14 @@ ol,ul{
 #nav .dGrid ul li:hover a::after{
     width: 100%;
     cursor: pointer;
+}
+#nav .dGrid .navBtn .commonBtn{
+    border-color: transparent;
+}
+#nav .dGrid .navBtn .commonBtn:hover{
+    color: #fff;
+    border-color: #fff;
+    background-color: unset;
 }
 /* Nav End */
 
@@ -618,11 +623,13 @@ ol,ul{
 
 /* footer start */
 #footer{
-    padding: 100px 0;
+    padding: 100px 0 90px;
 }
 #footer .dGrid{
     grid-template-columns: repeat(12, 1fr);
-    /* column-gap: 129px; */
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(18, 18, 18, 0.16);
+    margin-bottom: 32px;
 }
 #footer .dGrid .left {
     grid-column: span 4;
@@ -687,5 +694,8 @@ ol,ul{
 }
 #footer .dGrid .right ul li a:hover::before{
     width: 10px;
+}
+#footer .footerBottomText{
+    color: rgba(35, 35, 35, 0.50);
 }
 /* footer end */
